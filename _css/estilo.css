@@ -1,0 +1,459 @@
+/*Continuar vendo a formatação dos links, todos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+@font-face {
+    font-family: 'fontLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --red-color: #ff0000;
+    --light-gray-color: #dddddd;
+    --dark-gray-color: #606060;
+    --light-color: #888888;
+    --author-name: #cecece;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray-color);
+    color: var(--black-color);
+    font-family: Arial, sans-serif;
+}
+#interface {
+    width: 100%;
+    background-color: var(--white-color);
+}
+
+
+
+/*Formatação do cabeçalho*/
+
+#index-main-header {
+    height: 460px;
+    padding: 0 3%;
+    
+}
+
+.index-nav {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#index-main-header h1 {
+    font-family: 'fontLogo', sans-serif;
+    font-size: 2rem;
+    color: var(--dark-gray-color);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}
+#index-main-header h2 {
+    font-family: 'titillium', sans-serif;
+    font-size: 1rem;
+    color: var(--light-color);
+}
+
+.index-menu-and-glass {
+    width: 100%;
+    height: 300px;
+    margin-top: 150px;
+    border-bottom: 1px solid var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-menu {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 60px;
+}
+.index-menu li {
+    width: 146px;
+    height: 40px;
+    background-color: var(--light-gray-color);
+    padding-bottom: 10px;
+    margin: 2px 2px;
+    transition: background-color 1s;
+}
+.index-menu li:hover {
+    background-color: var(--dark-gray-color);
+}
+
+.index-menu a {
+    width: 146px;
+    height: 40px;
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 200;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.index-menu a:hover {
+    border: 1px solid black;
+    color: var(--white-color);
+    /*font-weight: 700;*/
+    text-decoration: underline;
+}
+
+#image-glass {
+    height: 200px;
+    background-image: url(../_imagens/glass-logo-peq.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: 30%;
+    background-position-y: 100%;
+}   
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a{
+    color: var(--dark-gray-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Formatação das seções*/
+.column-or-columns {
+    max-width: 1400px;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    margin: 0 auto;
+}
+
+.column-one {
+    max-width: 600px;
+    padding: 5px;
+}
+
+.column-two {
+    max-width: 600px;
+    padding: 5px;
+}
+
+#main-news {
+    margin: 5px 0;
+}
+
+
+#section-in-mobile {
+    margin: 5px 0;
+}
+
+
+
+
+
+/*Formatação de imagens com legenda*/
+figure.photo-caption {
+    position: relative;
+    border: 8px solid var(--white-color));
+    box-shadow: 1px 1px 4px var(--black-color);
+}   
+figure.photo-caption img {
+    width: 100%;
+    height: 100%; 
+}
+
+figure.photo-caption figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0,.4);
+    color: var(--white-color);
+    width: 100%;
+    height: 100%;
+    padding: 10px; 
+    transition: opacity 1s;
+}
+figure.photo-caption figcaption:hover {
+    opacity: 1;   
+    font-size: 2rem;
+}
+
+.aside-outside-mobile {
+    display: none;
+}
+
+.header-article {
+    height: 50px;
+}
+
+.header-article h2 {
+    font-family: 'fontlogo', sans-serif;
+    font-size: 1.5rem;
+    color: var(--dark-gray-color);
+    text-align: center;
+}
+
+.header-article h4 {
+    font-size: 0.8rem;
+    color: var(--author-name);
+    background-color: var(--white-color);
+    margin-top: -7px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.header-article h5 {
+    margin-top: -20px;
+}
+
+.header-article h6 {
+    margin-top: -70px;
+    text-align: right;
+}
+
+
+.body-article h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark-gray-color);
+    background-color: var(--light-color);
+    padding: 5px 0 5px 10px;
+    margin: 10px 0;
+}
+
+
+#all-about-google-glass table {
+    border: 1px solid var(--dark-gray-color);
+    border-spacing: 0;
+    margin: 0 auto;
+}
+
+#all-about-google-glass caption {
+    color: var(--light-color);
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+#all-about-google-glass caption span {
+    display: block;
+    float: right;
+    color: var(--black-color);
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+#all-about-google-glass td {
+    border: 1px solid var(--dark-gray-color);
+    padding: 10px;
+}
+
+#all-about-google-glass td.left-column {
+    color: var(--white-color);
+    background-color: var(--dark-gray-color);
+    text-align: right;
+    vertical-align: top;
+}
+
+#all-about-google-glass td.right-column {
+    background-color: var(--light-gray-color);
+}
+
+#other-news-section {
+    font-family: 'fontlogo', sans-serif;
+    font-size: 1rem;
+    color: var(--black-color);
+    background-color: var(--light-gray-color);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#other-news-section h2 {
+    font-size: 1.2rem;
+    color: var(--black-color);
+    text-align: center;   
+}
+
+
+#other-news-section h3 {
+    background-color: var(--dark-gray-color);
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+
+#index-main-footer {
+    width: 100%;
+    max-width: 1600px;
+    height: 80px;
+    background-color: var(--light-gray-color);
+    border-top: 1px solid var(--black-color);
+    display: flex;
+    align-items: center;
+}
+
+.index-footer-information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(min-width: 768px) {
+    /*Formatação do cabeçalho*/
+    
+    #interface {
+            
+    }
+      
+    #index-main-header {
+        height: 230px;
+    }
+
+    .index-nav {
+        height: 230px;
+        padding: 0 3%;
+        border-bottom: 1px solid var(--dark-gray-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: none;
+    }
+    
+    .index-menu-and-glass  {
+        width: 350px;
+        height: 230px;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+    }
+       
+    #index-main-header h1 {
+        font-size: 3rem;
+    }
+    #index-main-header h2 {
+        font-size: 1.5rem;
+        width: 437px;
+    }
+    .index-main-titles {
+        width: 295px;
+        height: 150px;
+        position: relative;
+        top: 10%;
+        left: 10%;
+        background-image: url("../_imagens/glass-logo-peq.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .index-menu  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: absolute;
+        top: 0%;
+        left: 5%;
+    }
+
+    #image-glass {
+        width: 300px;
+        background-image: none;
+        position: relative;
+        top: 25%;
+        left: 10%;   
+    }
+    
+    /*Formatação das seções*/
+
+    .section-in-mobile {
+        display: none;
+    }
+    
+    .header-article {
+         height: 60px;
+    }
+    
+    .aside-outside-mobile {
+        display: flex;
+    }
+    
+    .column-or-columns {
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: center;  
+    }
+    
+    .column-one {
+        border-right: 1px solid var(--black-color);
+        margin: 0 10px 0 0;
+    }
+    
+    .header-article h2 {
+        text-align: left;
+    }
+    
+    .header-article h4 {
+        text-align: left;
+    }
+    
+    .header-article h5 {
+        margin-top: -10;
+    }
+    
+    .header-article h6 {
+        margin-top: -20px;
+        text-align: left;
+    }
+    
+
+    #other-news-aside {
+        font-family: 'fontlogo', sans-serif;
+        font-size: 1rem;
+        color: var(--black-color);
+        background-color: var(--light-gray-color);;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    #other-news-aside h2 {
+        color: var(--black-color);
+        font-size: 1.2rem;
+    }
+    
+    #other-news-aside h3 {
+        background-color: var(--dark-gray-color);
+        color: var(--white-color);
+        font-size: 1rem;
+    }
+
+}
+
